@@ -4,7 +4,7 @@ const path=require("path");
 
 const app=express();
 
-mongoose.connect('mongodb://localhost:27017/todolist').then(()=>{
+mongoose.connect('mongodb+srv://PRATHYUSHA:MONGODBATLAS@cluster0.xchgmiw.mongodb.net/?retryWrites=true&w=majority').then(()=>{
     console.log("connected to database");
 }).catch((err)=>{
     console.log(err);
